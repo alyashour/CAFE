@@ -11,6 +11,7 @@
 		0126593D2B9AA54900F0715F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126593C2B9AA54900F0715F /* ContentView.swift */; };
 		0126593F2B9AA54A00F0715F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0126593E2B9AA54A00F0715F /* Assets.xcassets */; };
 		012659422B9AA54A00F0715F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012659412B9AA54A00F0715F /* Preview Assets.xcassets */; };
+		0126594A2B9AA5A700F0715F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 012659492B9AA5A700F0715F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0126593E2B9AA54A00F0715F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		012659412B9AA54A00F0715F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		012659432B9AA54A00F0715F /* CAFE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CAFE.entitlements; sourceTree = "<group>"; };
+		012659492B9AA5A700F0715F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				0126593A2B9AA54900F0715F /* CAFEApp.swift */,
 				0126593C2B9AA54900F0715F /* ContentView.swift */,
+				012659492B9AA5A700F0715F /* README.md */,
 				0126593E2B9AA54A00F0715F /* Assets.xcassets */,
 				012659432B9AA54A00F0715F /* CAFE.entitlements */,
 				012659402B9AA54A00F0715F /* Preview Content */,
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0126594A2B9AA5A700F0715F /* README.md in Resources */,
 				012659422B9AA54A00F0715F /* Preview Assets.xcassets in Resources */,
 				0126593F2B9AA54A00F0715F /* Assets.xcassets in Resources */,
 			);
