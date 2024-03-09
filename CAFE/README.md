@@ -1,4 +1,4 @@
-# Calculator App For Engineering Students (CAFE)
+# Calculator APP For Engineering Students (CAFES)
 I know what you're thinking...
 "Gosh Aly, a calculator app?! What are we 11 years old???! At least be a little creative."
 
@@ -45,6 +45,7 @@ I want a very specific set of features all contained within 1 program, is that t
     - For a demo, see https://www.integral-calculator.com
 
 ## But how babygirl?
+-- a.k.a implementation & technologies --
 Really, this is my favourite part of starting a project: picking the language.
 I get so much happiness from it idk it's like the most entertaining thing in the world.
 Every language has a colour:
@@ -52,16 +53,9 @@ Every language has a colour:
 - Swift is creme
 - Python is green
 - C++ is blue
-- JS is shit brown
 I set them all up on the wheel and let it spin, so that the gods decide what is best for me.
 
-Just kidding, Rust and C++ are gone because they're hard and I need this calculator done yesterday.
-I don't know any JS frameworks to make it worth it to use JS.
-And between Python and Swift...
-Python is wonderful, I already know what I'm doing, and I could probably get this project finished in a reasonable amount of time using TKinter...
-But Swift means I can finally justify buying an expensive ass Macbook for university soooooo
-
-I chose Swift and SwiftUI.
-Hopefully I'll have a working prototype done by 2028
+Just kidding, as I was researching for this project I heard one of my favourite youtubers call Swift an "excellently designed language" so I had to check it out.
+I've never used Swift before so, hopefully I'll have a working prototype done by 2028
 
 Aly Ashour. March 7, 2024.

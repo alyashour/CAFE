@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		012659412B9AA54A00F0715F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		012659432B9AA54A00F0715F /* CAFE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CAFE.entitlements; sourceTree = "<group>"; };
 		012659492B9AA5A700F0715F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0126594B2B9B414F00F0715F /* SwiftNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SwiftNotes.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				0126593A2B9AA54900F0715F /* CAFEApp.swift */,
+				0126594B2B9B414F00F0715F /* SwiftNotes.md */,
 				0126593C2B9AA54900F0715F /* ContentView.swift */,
 				012659492B9AA5A700F0715F /* README.md */,
 				0126593E2B9AA54A00F0715F /* Assets.xcassets */,
@@ -108,7 +110,7 @@
 				};
 			};
 			buildConfigurationList = 012659322B9AA54900F0715F /* Build configuration list for PBXProject "CAFE" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
