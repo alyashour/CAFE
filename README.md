@@ -23,7 +23,7 @@ And it would've taken even longer to do the whole thing in a python notebook or 
 I love python, I really do. And even more than that I love working in my terminal...
 But I need something quick and easy that will house all of my calculations with no problems.
 
-## What about <insert alternative here>
+## What about |insert alternative here|
 Desmos, MATLAB, Mathematica...
 All of them are great. In fact, I love Desmos more than almost anything in the whole world. I love Desmos more than my own family. I almost love Desmos enough to not do this project. But it (and all other alternatives) fail to do what I want them to do: be *complete*.
 I want a very specific set of features all contained within 1 program, is that too much to ask?
