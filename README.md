@@ -1,6 +1,6 @@
 # Calculator APP For Engineering Students (CAFES)
 I know what you're thinking...
-"Gosh Aly, a calculator app?! What are we 11 years old???! At least be a little creative."
+"A calculator app?! What are we 11 years old???! At least be a little creative."
 
 I get it, I get it... this is THE beginner computer science project. But this is no regular calculator app babes... nonono, this is *The* Calculator App TM.
 
