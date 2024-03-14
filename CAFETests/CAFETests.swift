@@ -8,6 +8,13 @@
 import XCTest
 @testable import CAFE
 
+// this feature is so cool and so well designed im gonna cry
+extension Array where Element == Token {
+    func stringify() -> [String] {
+        return self.map { $0.description }
+    }
+}
+
 final class CAFETests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -18,16 +25,16 @@ final class CAFETests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testParse() {
-        let parser = LineParser()
+    func testLexer() {
+        let lexer = LineLexer()
         // test all symbols with random whitespace
-        let t1 = parser.parse("., = (")
-        let t2 = parser.parse(") + - *")
-        let t3 = parser.parse("/ ^ & ")
+        let t1 = lexer.tokenize("1 = (").stringify()
+        let t2 = lexer.tokenize(") + - *").stringify()
+        let t3 = lexer.tokenize("/ ^ & ").stringify()
         
         
-        XCTAssertEqual(t1, ["decimal:noVal", "decimal:noVal", "equals:noVal", "lBracket:noVal"])
-        XCTAssertEqual(t2, ["rBracket:noVal", "addOperator:noVal", "subOperator:noVal", "timesOperator:noVal"])
+        XCTAssertEqual(t1, ["number:1", "equals:noVal", "lBracket:("])
+        XCTAssertEqual(t2, ["rBracket:)", "addOperator:noVal", "subOperator:noVal", "timesOperator:noVal"])
         XCTAssertEqual(t3, ["divOperator:noVal", "expOperator:noVal", "noToken:noVal"])
         
     }
@@ -35,11 +42,17 @@ final class CAFETests: XCTestCase {
     /// this is not the best test of the consolidation func as it depends also on the parsing func working
     /// but i'm too lazy to write the token stream parse gives back by hand
     func testConsolidation() {
-        let t1 = parser.parse("123 4 ")
-        let t2 = parser.parse("abc d")
+        let lexer = LineLexer()
         
-        XCTAssertEqual(t1, ["number:123", "number:4"])
-        XCTAssertEqual(t2, ["letter:abc", "letter:d"])
+        let t1 = lexer.tokenize("12.3 4 ").stringify()
+        let t2 = lexer.tokenize("abc d4").stringify()
+        let t3 = lexer.tokenize("5.6.7 14epi").stringify()
+        let t4 = lexer.tokenize("(pi * del) + ze.e").stringify()
+        
+        XCTAssertEqual(t1, ["double:12.3", "number:4"])
+        XCTAssertEqual(t2, ["letter:abc", "letter:d4"])
+        XCTAssertEqual(t3, ["noToken:5.6.7", "letter:14epi"])
+        XCTAssertEqual(t4, ["lBracket:(", "letter:pi", "timesOperator:noVal", "letter:del", "rBracket:)", "addOperator:noVal", "letter:ze.e"])
     }
 
 }

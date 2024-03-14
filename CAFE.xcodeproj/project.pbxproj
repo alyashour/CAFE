@@ -14,9 +14,11 @@
 		0126594A2B9AA5A700F0715F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 012659492B9AA5A700F0715F /* README.md */; };
 		012659682BA25BF400F0715F /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659672BA25BF400F0715F /* LineView.swift */; };
 		0126596A2BA25E7F00F0715F /* LineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659692BA25E7F00F0715F /* LineViewModel.swift */; };
-		0126596C2BA25F4A00F0715F /* LineParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126596B2BA25F4A00F0715F /* LineParser.swift */; };
+		0126596C2BA25F4A00F0715F /* LineLexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126596B2BA25F4A00F0715F /* LineLexer.swift */; };
 		0126597A2BA29D8800F0715F /* CAFETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659792BA29D8800F0715F /* CAFETests.swift */; };
-		012659812BA2A54500F0715F /* AbstractSyntaxTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659802BA2A54500F0715F /* AbstractSyntaxTree.swift */; };
+		012659832BA383DF00F0715F /* LineParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659822BA383DF00F0715F /* LineParser.swift */; };
+		012659852BA38C5000F0715F /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659842BA38C5000F0715F /* Block.swift */; };
+		012659872BA3926500F0715F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659862BA3926500F0715F /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +42,13 @@
 		0126594B2B9B414F00F0715F /* SwiftNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SwiftNotes.md; sourceTree = "<group>"; };
 		012659672BA25BF400F0715F /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		012659692BA25E7F00F0715F /* LineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewModel.swift; sourceTree = "<group>"; };
-		0126596B2BA25F4A00F0715F /* LineParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineParser.swift; sourceTree = "<group>"; };
+		0126596B2BA25F4A00F0715F /* LineLexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLexer.swift; sourceTree = "<group>"; };
 		0126596E2BA2630B00F0715F /* AppNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AppNotes.md; sourceTree = "<group>"; };
 		012659772BA29D8800F0715F /* CAFETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAFETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		012659792BA29D8800F0715F /* CAFETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAFETests.swift; sourceTree = "<group>"; };
-		012659802BA2A54500F0715F /* AbstractSyntaxTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSyntaxTree.swift; sourceTree = "<group>"; };
+		012659822BA383DF00F0715F /* LineParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineParser.swift; sourceTree = "<group>"; };
+		012659842BA38C5000F0715F /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		012659862BA3926500F0715F /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +97,10 @@
 				0126593C2B9AA54900F0715F /* ContentView.swift */,
 				012659672BA25BF400F0715F /* LineView.swift */,
 				012659692BA25E7F00F0715F /* LineViewModel.swift */,
-				012659802BA2A54500F0715F /* AbstractSyntaxTree.swift */,
-				0126596B2BA25F4A00F0715F /* LineParser.swift */,
+				012659822BA383DF00F0715F /* LineParser.swift */,
+				012659842BA38C5000F0715F /* Block.swift */,
+				0126596B2BA25F4A00F0715F /* LineLexer.swift */,
+				012659862BA3926500F0715F /* Token.swift */,
 				0126593E2B9AA54A00F0715F /* Assets.xcassets */,
 				012659432B9AA54A00F0715F /* CAFE.entitlements */,
 				012659402B9AA54A00F0715F /* Preview Content */,
@@ -219,12 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0126596C2BA25F4A00F0715F /* LineParser.swift in Sources */,
+				0126596C2BA25F4A00F0715F /* LineLexer.swift in Sources */,
+				012659852BA38C5000F0715F /* Block.swift in Sources */,
 				0126593D2B9AA54900F0715F /* ContentView.swift in Sources */,
-				012659812BA2A54500F0715F /* AbstractSyntaxTree.swift in Sources */,
 				0126593B2B9AA54900F0715F /* CAFEApp.swift in Sources */,
+				012659832BA383DF00F0715F /* LineParser.swift in Sources */,
 				0126596A2BA25E7F00F0715F /* LineViewModel.swift in Sources */,
 				012659682BA25BF400F0715F /* LineView.swift in Sources */,
+				012659872BA3926500F0715F /* Token.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ class LineViewModel: ObservableObject {
     @Published var input: String = ""
     @Published var output: String = ""
     
-    private var lineParser: LineParser
+    private let lineParser: LineParser
     
     init() {
         self.lineParser = LineParser()
