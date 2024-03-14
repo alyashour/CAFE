@@ -12,7 +12,22 @@
 		0126593F2B9AA54A00F0715F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0126593E2B9AA54A00F0715F /* Assets.xcassets */; };
 		012659422B9AA54A00F0715F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012659412B9AA54A00F0715F /* Preview Assets.xcassets */; };
 		0126594A2B9AA5A700F0715F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 012659492B9AA5A700F0715F /* README.md */; };
+		012659682BA25BF400F0715F /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659672BA25BF400F0715F /* LineView.swift */; };
+		0126596A2BA25E7F00F0715F /* LineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659692BA25E7F00F0715F /* LineViewModel.swift */; };
+		0126596C2BA25F4A00F0715F /* LineParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126596B2BA25F4A00F0715F /* LineParser.swift */; };
+		0126597A2BA29D8800F0715F /* CAFETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659792BA29D8800F0715F /* CAFETests.swift */; };
+		012659812BA2A54500F0715F /* AbstractSyntaxTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012659802BA2A54500F0715F /* AbstractSyntaxTree.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0126597B2BA29D8800F0715F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0126592F2B9AA54900F0715F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 012659362B9AA54900F0715F;
+			remoteInfo = CAFE;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		012659372B9AA54900F0715F /* CAFE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAFE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,10 +38,24 @@
 		012659432B9AA54A00F0715F /* CAFE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CAFE.entitlements; sourceTree = "<group>"; };
 		012659492B9AA5A700F0715F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0126594B2B9B414F00F0715F /* SwiftNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SwiftNotes.md; sourceTree = "<group>"; };
+		012659672BA25BF400F0715F /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		012659692BA25E7F00F0715F /* LineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewModel.swift; sourceTree = "<group>"; };
+		0126596B2BA25F4A00F0715F /* LineParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineParser.swift; sourceTree = "<group>"; };
+		0126596E2BA2630B00F0715F /* AppNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AppNotes.md; sourceTree = "<group>"; };
+		012659772BA29D8800F0715F /* CAFETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAFETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		012659792BA29D8800F0715F /* CAFETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAFETests.swift; sourceTree = "<group>"; };
+		012659802BA2A54500F0715F /* AbstractSyntaxTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSyntaxTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		012659342B9AA54900F0715F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012659742BA29D8800F0715F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,7 +68,11 @@
 		0126592E2B9AA54900F0715F = {
 			isa = PBXGroup;
 			children = (
+				0126596E2BA2630B00F0715F /* AppNotes.md */,
+				012659492B9AA5A700F0715F /* README.md */,
+				0126594B2B9B414F00F0715F /* SwiftNotes.md */,
 				012659392B9AA54900F0715F /* CAFE */,
+				012659782BA29D8800F0715F /* CAFETests */,
 				012659382B9AA54900F0715F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				012659372B9AA54900F0715F /* CAFE.app */,
+				012659772BA29D8800F0715F /* CAFETests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				0126593A2B9AA54900F0715F /* CAFEApp.swift */,
-				0126594B2B9B414F00F0715F /* SwiftNotes.md */,
 				0126593C2B9AA54900F0715F /* ContentView.swift */,
-				012659492B9AA5A700F0715F /* README.md */,
+				012659672BA25BF400F0715F /* LineView.swift */,
+				012659692BA25E7F00F0715F /* LineViewModel.swift */,
+				012659802BA2A54500F0715F /* AbstractSyntaxTree.swift */,
+				0126596B2BA25F4A00F0715F /* LineParser.swift */,
 				0126593E2B9AA54A00F0715F /* Assets.xcassets */,
 				012659432B9AA54A00F0715F /* CAFE.entitlements */,
 				012659402B9AA54A00F0715F /* Preview Content */,
@@ -72,6 +108,14 @@
 				012659412B9AA54A00F0715F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		012659782BA29D8800F0715F /* CAFETests */ = {
+			isa = PBXGroup;
+			children = (
+				012659792BA29D8800F0715F /* CAFETests.swift */,
+			);
+			path = CAFETests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +138,24 @@
 			productReference = 012659372B9AA54900F0715F /* CAFE.app */;
 			productType = "com.apple.product-type.application";
 		};
+		012659762BA29D8800F0715F /* CAFETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0126597D2BA29D8800F0715F /* Build configuration list for PBXNativeTarget "CAFETests" */;
+			buildPhases = (
+				012659732BA29D8800F0715F /* Sources */,
+				012659742BA29D8800F0715F /* Frameworks */,
+				012659752BA29D8800F0715F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0126597C2BA29D8800F0715F /* PBXTargetDependency */,
+			);
+			name = CAFETests;
+			productName = CAFETests;
+			productReference = 012659772BA29D8800F0715F /* CAFETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +168,10 @@
 				TargetAttributes = {
 					012659362B9AA54900F0715F = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					012659762BA29D8800F0715F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 012659362B9AA54900F0715F;
 					};
 				};
 			};
@@ -123,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				012659362B9AA54900F0715F /* CAFE */,
+				012659762BA29D8800F0715F /* CAFETests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +205,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		012659752BA29D8800F0715F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,12 +219,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0126596C2BA25F4A00F0715F /* LineParser.swift in Sources */,
 				0126593D2B9AA54900F0715F /* ContentView.swift in Sources */,
+				012659812BA2A54500F0715F /* AbstractSyntaxTree.swift in Sources */,
 				0126593B2B9AA54900F0715F /* CAFEApp.swift in Sources */,
+				0126596A2BA25E7F00F0715F /* LineViewModel.swift in Sources */,
+				012659682BA25BF400F0715F /* LineView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012659732BA29D8800F0715F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0126597A2BA29D8800F0715F /* CAFETests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0126597C2BA29D8800F0715F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 012659362B9AA54900F0715F /* CAFE */;
+			targetProxy = 0126597B2BA29D8800F0715F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		012659442B9AA54A00F0715F /* Debug */ = {
@@ -325,6 +419,40 @@
 			};
 			name = Release;
 		};
+		0126597E2BA29D8800F0715F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BDGN276XGB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AlyAshour.CAFETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAFE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CAFE";
+			};
+			name = Debug;
+		};
+		0126597F2BA29D8800F0715F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BDGN276XGB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AlyAshour.CAFETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAFE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CAFE";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -342,6 +470,15 @@
 			buildConfigurations = (
 				012659472B9AA54A00F0715F /* Debug */,
 				012659482B9AA54A00F0715F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0126597D2BA29D8800F0715F /* Build configuration list for PBXNativeTarget "CAFETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0126597E2BA29D8800F0715F /* Debug */,
+				0126597F2BA29D8800F0715F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
