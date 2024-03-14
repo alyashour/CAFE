@@ -99,6 +99,6 @@ After a few hours of working I think I've sufficiently wetted my beak enough to 
 In my humble opinion, swift is *incredible*. I love it. I think I might just never make anything using anything else ever again.
 It has the charm all Apple things do: wholistic integration.
 
-The thing is, languages like C++, Java, and JS are lacking beauty. They are all amazing and I love using them, but modern languages like Rust (project coming btw), and Swift take integration to an almost artistic level. Have you ever used cargo? It's orgasmic.
+The thing is languages like C++, Java, and JS are lacking beauty. They are all amazing and I love using them, but modern languages like Rust and Swift take integration to an almost artistic level. Have you ever used cargo? It's orgasmic.
 
 Swift though, takes this to maniacal highs. Every part of development from writing to testing to the IDE is a curated experience. To all my brothers in software eng. and comp. sci. if you have a mac and haven't tried out swift yet... what are you doing. Get on it.
