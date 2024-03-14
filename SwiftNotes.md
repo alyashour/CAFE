@@ -5,7 +5,7 @@ I've compiled what I learned about Swift and SwiftUI below for future reference
 ## Computed Properties
 Variables that are declared like this:
 `var myVar: Double {...}` are called *computed properties*.
-They are dressed up setters and getters; almost exactly like C# properties.
+They are dressed up setters and getters; exactly like C# properties.
 ```swift
 var center: Point {
         get {
@@ -62,13 +62,13 @@ struct CAFEApp: App {
 ```
 You'll notice we create a *property* called body of some type that implements the Scene protocol.
 The getter for this property is this weird line that says WindowGroup{...} but that doesn't make any sense right? What does this line do? Is it a function declaration idk...
-Turns out it a whole slew of simplifications. I've rewritten this code below without any sugar so you can see what's going on.
+Turns out it a whole slew of simplifications. I've rewritten this code below without any sugar so you can see exactly what's going on.
 ```swift
 // ...
 var body: some Scene {
     get {
         WindowGroup(closure: { () -> Void in
-            ContentView()
+            return ContentView()
         })
     }
 }
@@ -91,4 +91,14 @@ WindowGroup() {
 ```
 
 And if you want to let the brainfuckery get even realer, when the constructor only has 1 parameter AND its a closure (like in this case) you can just **get rid of the function parentheses**... giving us our final answer `WindowGroup {ContentView()}` 😀
-And that's just the template!! We haven't even started writing code!
+
+Aly Ashour. March 7, 2024
+
+## Thoughts
+After a few hours of working I think I've sufficiently wetted my beak enough to speak my mind.
+In my humble opinion, swift is *incredible*. I love it. I think I might just never make anything using anything else ever again.
+It has the charm all Apple things do: wholistic integration.
+
+The thing is, languages like C++, Java, and JS are lacking beauty. They are all amazing and I love using them, but modern languages like Rust (project coming btw), and Swift take integration to an almost artistic level. Have you ever used cargo? It's orgasmic.
+
+Swift though, takes this to maniacal highs. Every part of development from writing to testing to the IDE is a curated experience. To all my brothers in software eng. and comp. sci. if you have a mac and haven't tried out swift yet... what are you doing. Get on it.

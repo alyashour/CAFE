@@ -9,7 +9,7 @@ It all comes down to what happened yesterday night, March 6th, 2024.
 I (and I mean this with no exaggeration or hyperbole) got my ass **handed** to me writing the Intro. to Computer Engineering midterm. 
 It was bad. 
 And part of the reason it was so bad was because with such little time to do so many questions, it was entirely impossible to do the math AND keep track of units. 
-So with my back to the wind, and my eyes staring into the sun, I ignored all the units and punched whatever numbers I saw directly into my calculator.
+So like Morgan in RDR2, I faced my fate, ignoring all the units and punched whatever numbers I saw directly into my calculator.
 It was bad.
 
 But really what alternatives did I have?
