@@ -1,4 +1,4 @@
-# Calculator APP For Engineering Students (CAFES)
+# Calculator 😮
 I know what you're thinking...
 "A calculator app?! What are we 11 years old???! At least be a little creative."
 
