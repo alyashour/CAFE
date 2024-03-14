@@ -48,14 +48,7 @@ I want a very specific set of features all contained within 1 program, is that t
 -- a.k.a implementation & technologies --
 Really, this is my favourite part of starting a project: picking the language.
 I get so much happiness from it idk it's like the most entertaining thing in the world.
-Every language has a colour:
-- Rust is orange
-- Swift is creme
-- Python is green
-- C++ is blue
-I set them all up on the wheel and let it spin, so that the gods decide what is best for me.
-
-Just kidding, as I was researching for this project I heard one of my favourite youtubers call Swift an "excellently designed language" so I had to check it out.
+I was researching for this project I heard one of my favourite youtubers call Swift an "excellently designed language" so I had to check it out.
 I've never used Swift before so, hopefully I'll have a working prototype done by 2028
 
 Aly Ashour. March 7, 2024.
