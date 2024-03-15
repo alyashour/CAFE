@@ -3,7 +3,7 @@ I know what you're thinking...
 "A calculator app?! What are we 11 years old???! At least be a little creative."
 
 I get it, I get it... this is THE computer science project. But this is no regular calculator app babes... nonono, this is *The* Calculator App TM.
-
+W.I.P!
 ## Why a Calculator?
 It all comes down to what happened yesterday night, March 6th, 2024.
 I (and I mean this with no exaggeration or hyperbole) got my ass **handed** to me writing the Intro. to Computer Engineering midterm. 
