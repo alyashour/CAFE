@@ -1,7 +1,7 @@
-# Calculator
+# Café
 
 ## Overview
-Welcome to the **Calculator**, a versatile and efficient mathematical tool designed for students, engineers, and enthusiasts who need more than just a basic calculator. This project aims to combine the simplicity of traditional calculators with the advanced features of software like MATLAB, providing a comprehensive solution for various mathematical tasks.
+Welcome to Café, a versatile and efficient mathematical tool designed for students, engineers, and enthusiasts who need more than just a basic calculator. This project aims to combine the simplicity of traditional calculators with the advanced features of softwares like MATLAB & Desmos, providing a comprehensive solution for various mathematical tasks.
 
 ## Motivation
 This project was born out of a need for a more integrated and efficient tool during high-pressure situations, like exams, where quick calculations and unit tracking are essential. Traditional calculators and even some advanced software fall short in providing a seamless experience for managing complex calculations, units, and data.
